@@ -28,7 +28,7 @@ BEGIN{
 	$ENV{MEPATH} = $ENV{prefix} . '/lib/modeleditor';
 	$ENV{TLPATH} = $ENV{prefix} . '/lib/toollauncher';
 	$ENV{PYTHONDIR} = $ENV{pythondir};
-	$ENV{LTDL_LIBRARY_PATH} .= ':.:' . $ENV{ECELL3_DM_PATH} . ':' . $ENV{prefix} . '/lib/ecell/' . $ENV{VERSION};
+	$ENV{LTDL_LIBRARY_PATH} .= ':.:/sw/lib/ecell-3.1/dms/' . $ENV{ECELL3_DM_PATH} . ':' . $ENV{prefix} . '/lib/ecell/' . $ENV{VERSION};
 
 	require Inline;
 	import Inline Python => << '__INLINE_PYTHON__';
@@ -80,7 +80,7 @@ our @EXPORT = qw(
 
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 sub new{
