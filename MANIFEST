@@ -1,3 +1,8 @@
+_Inline/config
+_Inline/lib/auto/Bio/ECell_72c6/ECell_72c6.inl
+_Inline/lib/auto/Bio/ECell_72c6/ECell_72c6.pydat
+_Inline/lib/auto/Bio/ECell_8010/ECell_8010.inl
+_Inline/lib/auto/Bio/ECell_8010/ECell_8010.pydat
 Changes
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
@@ -15,4 +20,7 @@ Makefile.PL
 MANIFEST			This list of files
 META.yml
 README
+t/_Inline/config
+t/_Inline/lib/auto/Bio/ECell_8010/ECell_8010.inl
+t/_Inline/lib/auto/Bio/ECell_8010/ECell_8010.pydat
 t/Bio-ECell.t
